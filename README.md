@@ -22,6 +22,11 @@ The Video can also be found in the WorkingVideo Folder:
 https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/WorkingVideo/Yashwanth_ProITD_IoT_Project.mp4
 ```
 
+The below video shows how we make use on Inline Keyboard on Telegram to request data from Node-Red. The data is received on Node-Red from the MQTT Server. Whenever Telegram requests the data, Node-Red sends the information back.
+```
+https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/WorkingVideo/2024-01-11_13h10_13_IoT_Inline_Keyboard.mp4
+```
+
 ## 4. Overview
 
 ### 4.1 Monitoring Inside Environment
