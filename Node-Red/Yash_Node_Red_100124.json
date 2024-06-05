@@ -1,0 +1,2409 @@
+[
+    {
+        "id": "49656c0cd8f41895",
+        "type": "tab",
+        "label": "Yash",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e87eae34f519f65a",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "5a04a6db16e5aca5",
+                "68d587fbe09d1722",
+                "a1d19895bb82ee05"
+            ]
+        ]
+    },
+    {
+        "id": "5a04a6db16e5aca5",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "af69f2eb22312e23",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/humi",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "5a04a6db16e5aca5",
+                "598bb09255167bfc"
+            ]
+        ]
+    },
+    {
+        "id": "1a440b21b5a39cf3",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/+/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "e353ccf9ad298edf"
+            ]
+        ]
+    },
+    {
+        "id": "19f65ecab2a29f8f",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/+/humi",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "012d143f648390a6"
+            ]
+        ]
+    },
+    {
+        "id": "c87c345795d12190",
+        "type": "mqtt out",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/temp",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c78c979a4150be76",
+        "x": 430,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "032fd61ee700810f",
+        "type": "mqtt out",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/humi",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c78c979a4150be76",
+        "x": 430,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "34c3474ec4330c77",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Inject Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "be8ba9aa97de4bde",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Inject Message 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bf61f356524a9660",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Without anything connected",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ff7ceb8fc3a1abd8",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "61fa15942d810fef",
+        "type": "inject",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.type",
+                "v": "message",
+                "vt": "str"
+            },
+            {
+                "p": "payload.content",
+                "v": "Hello Test from Yashwanth",
+                "vt": "str"
+            },
+            {
+                "p": "payload.chatId",
+                "v": "1792398978",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 650,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9ddbe94bd8914e7",
+        "type": "inject",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Second TEst",
+        "payloadType": "str",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "a1d19895bb82ee05"
+            ]
+        ]
+    },
+    {
+        "id": "a1d19895bb82ee05",
+        "type": "function",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "func": "const temp = 20; \n\nif (msg.payload > temp) {\n    \n    msg.payload = {\n        chatId: 1792398978,\n        type: 'message',\n        content: \"Temperature is \" + msg.payload\n    };\n\n    return msg;\n    \n} else {\n    return null; \n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "1a83dc5f2411122a"
+            ]
+        ]
+    },
+    {
+        "id": "ba27902924ac06be",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 360,
+        "wires": [
+            [
+                "9be0ee31b8f737b1"
+            ]
+        ]
+    },
+    {
+        "id": "56c7874ff3146e42",
+        "type": "inject",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Third Test",
+        "payloadType": "str",
+        "x": 650,
+        "y": 300,
+        "wires": [
+            [
+                "ba27902924ac06be",
+                "9be0ee31b8f737b1"
+            ]
+        ]
+    },
+    {
+        "id": "9be0ee31b8f737b1",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1a83dc5f2411122a",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d3b2fea3370525df",
+        "type": "ui_slider",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "2c3e3936187827a9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "-10",
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "c87c345795d12190",
+                "032fd61ee700810f"
+            ]
+        ]
+    },
+    {
+        "id": "68d587fbe09d1722",
+        "type": "ui_gauge",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "group": "aa9a3e5d4e60b347",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-40",
+        "max": "100",
+        "colors": [
+            "#3584e4",
+            "#26a269",
+            "#ca3838"
+        ],
+        "seg1": "15",
+        "seg2": "45",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "598bb09255167bfc",
+        "type": "ui_gauge",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "group": "aa9a3e5d4e60b347",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#1c71d8",
+            "#33d17a",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e353ccf9ad298edf",
+        "type": "ui_chart",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "group": "2c3e3936187827a9",
+        "order": 2,
+        "width": 12,
+        "height": 8,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "012d143f648390a6",
+        "type": "ui_chart",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "group": "2c3e3936187827a9",
+        "order": 3,
+        "width": 12,
+        "height": 9,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 470,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "275981d2cd1d8bf5",
+        "type": "telegram receiver",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "52e7a1625b0a1d14",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 760,
+        "y": 120,
+        "wires": [
+            [
+                "34c3474ec4330c77"
+            ],
+            [
+                "be8ba9aa97de4bde"
+            ]
+        ]
+    },
+    {
+        "id": "eecdb4cc100cf35c",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "52e7a1625b0a1d14",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 1040,
+        "y": 120,
+        "wires": [
+            [
+                "bf61f356524a9660"
+            ],
+            [
+                "ff7ceb8fc3a1abd8"
+            ]
+        ]
+    },
+    {
+        "id": "adc153f02d385976",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/humi",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 840,
+        "wires": [
+            [
+                "d4cba5acc91b0d62",
+                "d610cea39bc86c17"
+            ]
+        ]
+    },
+    {
+        "id": "23cb2f155eca0de9",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Humidity 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "d4cba5acc91b0d62",
+        "type": "switch",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "25.1",
+                "vt": "num",
+                "v2": "49.9",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "50",
+                "vt": "num",
+                "v2": "74.9",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "75",
+                "vt": "num",
+                "v2": "100",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 330,
+        "y": 840,
+        "wires": [
+            [
+                "2c68738204528e83"
+            ],
+            [
+                "a887020c257475fe"
+            ],
+            [
+                "8951db05437f24b7"
+            ],
+            [
+                "5a246855976ca9dd"
+            ]
+        ]
+    },
+    {
+        "id": "9511a25ec5cd2a88",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "476f84af4e4e84c8"
+            ]
+        ]
+    },
+    {
+        "id": "d610cea39bc86c17",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Humidity Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "2c68738204528e83",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "% is the humidity"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Looks like it will be an extremely dry day"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Try to stay indoors."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "9511a25ec5cd2a88"
+            ]
+        ]
+    },
+    {
+        "id": "476f84af4e4e84c8",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 740,
+        "wires": [
+            [
+                "23cb2f155eca0de9"
+            ],
+            [
+                "23cb2f155eca0de9"
+            ]
+        ]
+    },
+    {
+        "id": "dac179cfbaf4be74",
+        "type": "comment",
+        "z": "49656c0cd8f41895",
+        "name": "WORKING",
+        "info": "",
+        "x": 140,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5afc6c9d7dc6361d",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Humidity 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8539473aa0a89732",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 800,
+        "wires": [
+            [
+                "faaeda256719691f"
+            ]
+        ]
+    },
+    {
+        "id": "a887020c257475fe",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "% is the Humidity"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Humidity is below optimal"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Carry a moisturizer if your going outside."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 800,
+        "wires": [
+            [
+                "8539473aa0a89732"
+            ]
+        ]
+    },
+    {
+        "id": "faaeda256719691f",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 800,
+        "wires": [
+            [
+                "5afc6c9d7dc6361d"
+            ],
+            [
+                "5afc6c9d7dc6361d"
+            ]
+        ]
+    },
+    {
+        "id": "ab67a08197614714",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Humidity 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d1cdb2f0eff565ee",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 860,
+        "wires": [
+            [
+                "619acc075a9252ee"
+            ]
+        ]
+    },
+    {
+        "id": "8951db05437f24b7",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "% is the humidity"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Humidity seems to be perfect."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Perfect day to go outside!"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 860,
+        "wires": [
+            [
+                "d1cdb2f0eff565ee"
+            ]
+        ]
+    },
+    {
+        "id": "619acc075a9252ee",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 860,
+        "wires": [
+            [
+                "ab67a08197614714"
+            ],
+            [
+                "ab67a08197614714"
+            ]
+        ]
+    },
+    {
+        "id": "b60c5a816fe95b56",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Humidity 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "43d868cd5815fd2c",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 920,
+        "wires": [
+            [
+                "596827524233e4aa"
+            ]
+        ]
+    },
+    {
+        "id": "5a246855976ca9dd",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "% is the Humidity."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "There is a possibility of rain or snowing."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Carry your umbrellas and jackets if your going outside."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 920,
+        "wires": [
+            [
+                "43d868cd5815fd2c"
+            ]
+        ]
+    },
+    {
+        "id": "596827524233e4aa",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 920,
+        "wires": [
+            [
+                "b60c5a816fe95b56"
+            ],
+            [
+                "b60c5a816fe95b56"
+            ]
+        ]
+    },
+    {
+        "id": "5b42b20ac8e75893",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "0b42eac4b5b77d06",
+                "13873726f97f4abe"
+            ]
+        ]
+    },
+    {
+        "id": "39cfc699f359e600",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temperature 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "0b42eac4b5b77d06",
+        "type": "switch",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "0.1",
+                "vt": "num",
+                "v2": "10",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "10.1",
+                "vt": "num",
+                "v2": "20",
+                "v2t": "num"
+            },
+            {
+                "t": "gte",
+                "v": "20.1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 330,
+        "y": 1120,
+        "wires": [
+            [
+                "281850bc6a3438d8"
+            ],
+            [
+                "49b9ccd4e2818764"
+            ],
+            [
+                "6e05c4328838e175"
+            ],
+            [
+                "2f7c12c99e3eaf69"
+            ]
+        ]
+    },
+    {
+        "id": "5c1c00b154e18d47",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1020,
+        "wires": [
+            [
+                "7d8fdb4dd2662b06"
+            ]
+        ]
+    },
+    {
+        "id": "13873726f97f4abe",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temperature Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "281850bc6a3438d8",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "degrees is the Temperature"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Looks like it is frozen outside."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Wear the right winter clothing if your going outside."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 1020,
+        "wires": [
+            [
+                "5c1c00b154e18d47"
+            ]
+        ]
+    },
+    {
+        "id": "7d8fdb4dd2662b06",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 1020,
+        "wires": [
+            [
+                "39cfc699f359e600"
+            ],
+            [
+                "39cfc699f359e600"
+            ]
+        ]
+    },
+    {
+        "id": "d8e1369030d229dd",
+        "type": "comment",
+        "z": "49656c0cd8f41895",
+        "name": "WORKING",
+        "info": "",
+        "x": 140,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "4468ba26cee93f30",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temperature 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "422144d9524f35d0",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1080,
+        "wires": [
+            [
+                "e7bbde812011a65e"
+            ]
+        ]
+    },
+    {
+        "id": "49b9ccd4e2818764",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "degrees is the Temperature"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Temperature is at the normal standards."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: 2 layers would be sufficient if your going outside."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 1080,
+        "wires": [
+            [
+                "422144d9524f35d0"
+            ]
+        ]
+    },
+    {
+        "id": "e7bbde812011a65e",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 1080,
+        "wires": [
+            [
+                "4468ba26cee93f30"
+            ],
+            [
+                "4468ba26cee93f30"
+            ]
+        ]
+    },
+    {
+        "id": "019d8d341b8a360a",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temperature 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "5b5fdd34936373f5",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1140,
+        "wires": [
+            [
+                "16104b22faa6d60a"
+            ]
+        ]
+    },
+    {
+        "id": "6e05c4328838e175",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "degrees is the Temperature"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Perfect day for activities."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Time to go outside!"
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 1140,
+        "wires": [
+            [
+                "5b5fdd34936373f5"
+            ]
+        ]
+    },
+    {
+        "id": "16104b22faa6d60a",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 1140,
+        "wires": [
+            [
+                "019d8d341b8a360a"
+            ],
+            [
+                "019d8d341b8a360a"
+            ]
+        ]
+    },
+    {
+        "id": "f326b2123b6c07c7",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temperature 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "b2bb22285e78d182",
+        "type": "change",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "message",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.chatId",
+                "pt": "msg",
+                "to": "1792398978",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1200,
+        "wires": [
+            [
+                "923c0537bb5ba96c"
+            ]
+        ]
+    },
+    {
+        "id": "2f7c12c99e3eaf69",
+        "type": "string",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "methods": [
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "degrees is the Temperature."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Very hot day compared to normal standards."
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "\\n"
+                    }
+                ]
+            },
+            {
+                "name": "append",
+                "params": [
+                    {
+                        "type": "str",
+                        "value": "Suggestion: Carry your umbrellas and keep yourself hydrated."
+                    }
+                ]
+            }
+        ],
+        "prop": "payload",
+        "propout": "payload",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 510,
+        "y": 1200,
+        "wires": [
+            [
+                "b2bb22285e78d182"
+            ]
+        ]
+    },
+    {
+        "id": "923c0537bb5ba96c",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 890,
+        "y": 1200,
+        "wires": [
+            [
+                "f326b2123b6c07c7"
+            ],
+            [
+                "f326b2123b6c07c7"
+            ]
+        ]
+    },
+    {
+        "id": "b2b6b8b1705e41b7",
+        "type": "switch",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "property": "callback.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 410,
+        "y": 1520,
+        "wires": [
+            [],
+            [
+                "6e8d8d3fda6a301f"
+            ],
+            [
+                "5bedafc9b9d8d504"
+            ],
+            [
+                "5bedafc9b9d8d504"
+            ]
+        ]
+    },
+    {
+        "id": "3f70a520589d4834",
+        "type": "function",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "func": "/* msg.payload = {\n        chatId: 1792398978,\n        type: \"message\",\n        content: \"Temperature is very less today\"\n    };\nreturn msg; */\n\nmsg.callback = msg.payload;\n\nif(msg.callback.content == 1){\n    //msg.payload.content = msg.payload.results[0].series[0].values[0][4] + \" °C\";\n    msg.payload.content = \"Blue is the colour, Football is the game\";\n}\nif (msg.callback.content == 2) {\n    //msg.payload.content = msg.payload.results[0].series[0].values[0][2] + \"%\";\n    msg.payload.content = \"We're all together and winning is our aim\";\n}\nif (msg.callback.content == 3) {\n    //msg.payload.content = msg.payload.results[0].series[0].values[0][3] + \"kPa\";\n    msg.payload.content = \"So cheer us all through the sun and rain\";\n}\nif (msg.callback.content == 4) {\n    //msg.payload.content = msg.payload.results[0].series[0].values[0][1];\n    msg.payload.content = \"Coz Chelsea, Chelsea is our name\";\n}\nreturn msg;\n\n/*\nmsg.payload.type = \"message\";\nmsg.payload.chatId = 1792398978;\nmsg.payload.content = \"Blue is the colour, Football is the game\";\nreturn msg;\n*/",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1420,
+        "wires": [
+            [
+                "3f8892f4cc410c54"
+            ]
+        ]
+    },
+    {
+        "id": "3f8892f4cc410c54",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 1420,
+        "wires": [
+            [
+                "9f297f9cdcdf99d1"
+            ]
+        ]
+    },
+    {
+        "id": "9f297f9cdcdf99d1",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temp data 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "6e8d8d3fda6a301f",
+        "type": "function",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "func": "msg.payload = {\n        chatId: 1792398978,\n        type: 'message',\n        content: \"Temperature is optimal today\"\n    };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1480,
+        "wires": [
+            [
+                "a823ce712f0057c1"
+            ]
+        ]
+    },
+    {
+        "id": "a823ce712f0057c1",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 1480,
+        "wires": [
+            [
+                "127c8f1fae597c0e"
+            ]
+        ]
+    },
+    {
+        "id": "127c8f1fae597c0e",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temp data 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "5bedafc9b9d8d504",
+        "type": "function",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "func": "msg.payload = {\n        chatId: 1792398978,\n        type: 'message',\n        content: \"Temperature is very high today\"\n    };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1540,
+        "wires": [
+            [
+                "922d8186cd3cca67"
+            ]
+        ]
+    },
+    {
+        "id": "922d8186cd3cca67",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 1540,
+        "wires": [
+            [
+                "ce2c80f3c6a01e04"
+            ]
+        ]
+    },
+    {
+        "id": "ce2c80f3c6a01e04",
+        "type": "debug",
+        "z": "49656c0cd8f41895",
+        "name": "Temp data 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "4d732512ae358c51",
+        "type": "telegram event",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 220,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "539a0c01e808a0b8",
+        "type": "mqtt in",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "topic": "M_IoT/Yash/temp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "5ec631cf948655f4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 1400,
+        "wires": [
+            [
+                "3f70a520589d4834"
+            ]
+        ]
+    },
+    {
+        "id": "b573bc4a48e4be92",
+        "type": "telegram receiver",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 190,
+        "y": 1600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d6a659c99144fce7",
+        "type": "telegram event",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 220,
+        "y": 1480,
+        "wires": [
+            [
+                "b2b6b8b1705e41b7",
+                "3f70a520589d4834"
+            ]
+        ]
+    },
+    {
+        "id": "0c59013f8c42283b",
+        "type": "telegram command",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "command": "/data",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "18f3f785d3fb3e94",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 1340,
+        "wires": [
+            [
+                "3d05c132b0510f71"
+            ],
+            [
+                "3d05c132b0510f71"
+            ]
+        ]
+    },
+    {
+        "id": "3d05c132b0510f71",
+        "type": "function",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "func": "var opts = {\n    reply_markup: JSON.stringify({\n        \"inline_keyboard\": [[\n            {\n                \"text\": \"Temperature\",\n                \"callback_data\": \"1\"\n            },\n            {\n                \"text\": \"Humidity\",\n                \"callback_data\": \"2\"\n            },\n            {\n                \"text\": \"Both\",\n                \"callback_data\": \"3\"\n            },\n            {\n                \"text\": \"Neither\",\n                \"callback_data\": \"4\"\n            }]\n        ]\n    })\n};\n\nmsg.error = false;\n\nmsg.payload.content = 'What information do you wish to know?';\nmsg.payload.options = opts;\nmsg.payload.chatId = 1792398978;\nmsg.payload.type = \"message\";\n\nreturn [msg];",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1340,
+        "wires": [
+            [
+                "e598e43d7db1f4fe"
+            ]
+        ]
+    },
+    {
+        "id": "e598e43d7db1f4fe",
+        "type": "telegram sender",
+        "z": "49656c0cd8f41895",
+        "name": "",
+        "bot": "18f3f785d3fb3e94",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ec631cf948655f4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c78c979a4150be76",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2c3e3936187827a9",
+        "type": "ui_group",
+        "name": "Everybodys Data",
+        "tab": "afe43017cddbbb11",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa9a3e5d4e60b347",
+        "type": "ui_group",
+        "name": "My_Data",
+        "tab": "afe43017cddbbb11",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "52e7a1625b0a1d14",
+        "type": "telegram bot",
+        "botname": "yashIoTbot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "18f3f785d3fb3e94",
+        "type": "telegram bot",
+        "botname": "test_yash_proitd_Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "afe43017cddbbb11",
+        "type": "ui_tab",
+        "name": "Prof_Alex",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
