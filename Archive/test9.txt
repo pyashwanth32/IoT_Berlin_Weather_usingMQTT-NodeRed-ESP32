@@ -1,0 +1,522 @@
+Microsoft Windows [Version 10.0.22621.2428]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git config --global user.name "Yashwanth_Pindi"
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git config --global user.email "yashwanth.pindi@student.htw-berlin.de"
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git clone git@gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+Cloning into 'proit-d_ws2324'...
+remote: Enumerating objects: 233, done.
+remote: Counting objects: 100% (230/230), done.
+remote: Compressing objects: 100% (213/213), done.
+Receiving objects:  82% (192/233)sed 0 (delta 0), pack-reused 3
+Receiving objects: 100% (233/233), 204.73 KiB | 5.69 MiB/s, done.
+Resolving deltas: 100% (59/59), done.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git switch -c s0590681
+Switched to a new branch 's0590681'
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Notes/
+        ./
+        ../s0590681_iot_2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push test7.txt
+fatal: 'test7.txt' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Notes/
+        ./
+        ../s0590681_iot_2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push test8
+fatal: 'test8' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>touch README.md
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git init --initial-branch=s0590681
+Initialized empty Git repository in D:/Yashwanth/HTW_Berlin/Semester_1/iot/git/.git/
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+warning: adding embedded git repository: proit-d_ws2324
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> proit-d_ws2324
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached proit-d_ws2324
+hint:
+hint: See "git help submodule" for more information.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   proit-d_ws2324
+        new file:   test7.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   proit-d_ws2324 (untracked content)
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add test7.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Pushing test7"
+[s0590681 (root-commit) 4e811f6] Pushing test7
+ 2 files changed, 1 insertion(+)
+ create mode 160000 proit-d_ws2324
+ create mode 100644 test7.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u origin s0590681
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u s0590681
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream s0590681 s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git remote add origin git@gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add test7.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Checking"
+On branch s0590681
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   proit-d_ws2324 (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push --set-upstream origin s0590681
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+ ! [rejected]        s0590681 -> s0590681 (fetch first)
+error: failed to push some refs to 'gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git pull
+warning: no common commits
+remote: Enumerating objects: 236, done.
+remote: Counting objects: 100% (233/233), done.
+remote: Compressing objects: 100% (215/215), done.
+Receiving objects:  99% (234/236)sed 0 (delta 0), pack-reused 3
+Receiving objects: 100% (236/236), 205.00 KiB | 10.25 MiB/s, done.
+Resolving deltas: 100% (61/61), done.
+From gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324
+ * [new branch]      Prasad.Bhandarkar-main-patch-66343 -> origin/Prasad.Bhandarkar-main-patch-66343
+ * [new branch]      Prof_A     -> origin/Prof_A
+ * [new branch]      S0590764   -> origin/S0590764
+ * [new branch]      S0591680   -> origin/S0591680
+ * [new branch]      main       -> origin/main
+ * [new branch]      s0585852   -> origin/s0585852
+ * [new branch]      s0586030   -> origin/s0586030
+ * [new branch]      s0590673   -> origin/s0590673
+ * [new branch]      s0590674   -> origin/s0590674
+ * [new branch]      s0590675   -> origin/s0590675
+ * [new branch]      s0590677   -> origin/s0590677
+ * [new branch]      s0590679   -> origin/s0590679
+ * [new branch]      s0590681   -> origin/s0590681
+ * [new branch]      s0590682   -> origin/s0590682
+ * [new branch]      s0590683   -> origin/s0590683
+ * [new branch]      s0590685   -> origin/s0590685
+ * [new branch]      s0590687   -> origin/s0590687
+ * [new branch]      s0590688   -> origin/s0590688
+ * [new branch]      s0590691   -> origin/s0590691
+ * [new branch]      s0590692   -> origin/s0590692
+ * [new branch]      s0590693   -> origin/s0590693
+ * [new branch]      s0590713   -> origin/s0590713
+ * [new branch]      s0592188   -> origin/s0592188
+ * [new branch]      s0592319   -> origin/s0592319
+ * [new branch]      testfolder -> origin/testfolder
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> s0590681
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add test7.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Pushing test7"
+On branch s0590681
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   proit-d_ws2324 (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git remote add origin git@gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+error: remote origin already exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Pushing all"
+On branch s0590681
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   proit-d_ws2324 (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git remote add origin git@gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+error: remote origin already exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m"
+error: switch `m' requires a value
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Pushing all"
+[s0590681 155b331] Pushing all
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 proit-d_ws2324
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u s0590681
+fatal: 's0590681' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u origin s0590681
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+ ! [rejected]        s0590681 -> s0590681 (non-fast-forward)
+error: failed to push some refs to 'gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+nothing to commit, working tree clean
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test9.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Pushing test9"
+[s0590681 318c3ce] Pushing test9
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test9.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push --set-upstream origin s0590681
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+ ! [rejected]        s0590681 -> s0590681 (non-fast-forward)
+error: failed to push some refs to 'gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git clone git@gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+Cloning into 'proit-d_ws2324'...
+remote: Enumerating objects: 242, done.
+remote: Counting objects: 100% (239/239), done.
+remote: Compressing objects: 100% (219/219), done.
+Receiving objects:  90% (218/242)sed 0 (delta 0), pack-reused 3
+Receiving objects: 100% (242/242), 205.71 KiB | 2.51 MiB/s, done.
+Resolving deltas: 100% (61/61), done.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        proit-d_ws2324/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git switch -c s0590681
+fatal: a branch named 's0590681' already exists
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        proit-d_ws2324/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        proit-d_ws2324/
+        test10.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add test10.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "committing"
+[s0590681 db1e7e1] committing
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test10.txt
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push
+fatal: The current branch s0590681 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin s0590681
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u origin s0590681
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+ ! [rejected]        s0590681 -> s0590681 (non-fast-forward)
+error: failed to push some refs to 'gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -u s0590681
+fatal: 's0590681' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git remote add origin https://gitlab.rz.htw-berlin.de/huhn/proit-d_ws2324.git
+error: remote origin already exists.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git branch -M main
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git branch -M s0590681
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -uf origin s0590681
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 899 bytes | 449.00 KiB/s, done.
+Total 9 (delta 1), reused 1 (delta 0), pack-reused 0
+remote:
+remote: To create a merge request for s0590681, visit:
+remote:   https://gitlab.rz.htw-berlin.de/huhn/proit-d_ws2324/-/merge_requests/new?merge_request%5Bsource_branch%5D=s0590681
+remote:
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+ + df180bc...db1e7e1 s0590681 -> s0590681 (forced update)
+branch 's0590681' set up to track 'origin/s0590681'.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Your branch is up to date with 'origin/s0590681'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        proit-d_ws2324/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+warning: adding embedded git repository: proit-d_ws2324
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> proit-d_ws2324
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached proit-d_ws2324
+hint:
+hint: See "git help submodule" for more information.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Initial commit"
+[s0590681 29c2fe5] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 proit-d_ws2324
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git branch -M s0590681
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -uf origin s0590681
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 304 bytes | 304.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: To create a merge request for s0590681, visit:
+remote:   https://gitlab.rz.htw-berlin.de/huhn/proit-d_ws2324/-/merge_requests/new?merge_request%5Bsource_branch%5D=s0590681
+remote:
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+   db1e7e1..29c2fe5  s0590681 -> s0590681
+branch 's0590681' set up to track 'origin/s0590681'.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>cd proit-d_ws2324
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git\proit-d_ws2324>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git\proit-d_ws2324>git add .
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git\proit-d_ws2324>cd ..
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git stats\us
+git: 'stats\us' is not a git command. See 'git --help'.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git status
+On branch s0590681
+Your branch is up to date with 'origin/s0590681'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git add .
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git commit -m "Initial commit of readme file"
+[s0590681 8605754] Initial commit of readme file
+ 1 file changed, 14 insertions(+)
+ create mode 100644 README.md
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git branch -M s0590681
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>git push -uf origin s0590681
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 517 bytes | 517.00 KiB/s, done.
+Total 3 (delta 1), reused 1 (delta 0), pack-reused 0
+remote:
+remote: To create a merge request for s0590681, visit:
+remote:   https://gitlab.rz.htw-berlin.de/huhn/proit-d_ws2324/-/merge_requests/new?merge_request%5Bsource_branch%5D=s0590681
+remote:
+To gitlab.rz.htw-berlin.de:huhn/proit-d_ws2324.git
+   29c2fe5..8605754  s0590681 -> s0590681
+branch 's0590681' set up to track 'origin/s0590681'.
+
+D:\Yashwanth\HTW_Berlin\Semester_1\iot\git>
