@@ -11,7 +11,6 @@ https://lucid.app/lucidchart/7e540f21-df85-49fa-9bad-a417b86fbee6/edit?viewport_
 
 ![IoT Project](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Pictorial_Representation.png)
 
-<img src="Pictorial_Representation.png" alt="isolated" width="800"/>
 
 ## 3. Working Video
 The working video of the project can be found in the HTW Server. The link is below:
@@ -61,17 +60,11 @@ https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/
 ```
 ![Temperature and Humidity Measurement](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Temperature_Humidity_Data.png)
 
-<img src="Temperature_Humidity_Data.png" alt="isolated" width="800"/>
-
 4. Telegram: Telegram is a cloud-based, cross-platform instant messaging service for interacting with all the users. It also offers having telegram bots that run automated tasks on the app. Node-Red continuously processes and transmits the data to the Telegram bot. The data is the current temperature and humidity levels in the environment the ESP8266 Is present.
 
 ![Inside Environment Data](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Inside_Temperature_Humidity.png)
 
-<img src="Inside_Temperature_Humidity.png" alt="isolated" width="800"/>
-
 ![Outside Environment Data](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Outside_Temperature_Humidity.png)
-
-<img src="Outside_Temperature_Humidity.png" alt="isolated" width="800"/>
 
 
 ## 6. Use Cases
@@ -79,9 +72,8 @@ Alerts are a crucial part of automation, since you should not be continuously mo
 
 ## 7. Uniqueness of the project
 The uniqueness of the project is that if one has to go outside, they can request for a weather update from the telegram bot. This information can be about the current temperature, current humidity, overall cloudiness, humidity, pressure, wind speed, maximum and minimum temperatures and the overall weather forecast.  This will help them have an overall estimation of the current forecast and conditions. Along with that, in the Node-red dashboard, one can compare the temperature and the humidity difference between the room which is being monitored by the DHT22 sensor, and the outside temperature and humidities.
-![Link to the Plot](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Berlin_Open_Weather.png)
 
-<img src="Berlin_Open_Weather.png" alt="isolated" width="800"/>
+![Link to the Plot](https://github.com/pyashwanth32/IoT_Berlin_Weather_usingMQTT-NodeRed-ESP32/blob/main/Pictures/Berlin_Open_Weather.png)
 
 ## 8. Conclusion
 IoT systems can be used for making our lives better for an extremely low cost. These systems provide an interface to monitor many different aspects of our environment with simple interfaces and affordable costs.
