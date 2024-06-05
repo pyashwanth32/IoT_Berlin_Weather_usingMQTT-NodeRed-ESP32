@@ -1,5 +1,6 @@
 
 # IoT Project - Yashwanth Pindi - s0590681
+This project was done as a part of my Master of Science in 'Professional Information Technology Business and Digitalization' course at 'Hochschule für Technik und Wirtschaft Berlin - University of Applied Sciences'.
 
 ## 1. Introduction
 The IoT project is used in order to create a smart temperature and humidity measurement system at your home. It can also monitor the outside climate conditions and can instantly give you an update as to what you can expect on the day. This is helpful in case of taking decisions about outdoor activities or to compare the outside conditions with that of inside.
@@ -13,7 +14,7 @@ https://lucid.app/lucidchart/7e540f21-df85-49fa-9bad-a417b86fbee6/edit?viewport_
 
 
 ## 3. Working Video
-The working video of the project can be found in the HTW Server. The link is below:
+The working video of the project can be found in the 'HTW Berlin - University of Applied Sciences' Server. The link is below:
 ```
 https://mediathek.htw-berlin.de/video/yashwanth-proitd-iot-project/a01e76ab8ee42fbe9f3e38818266ffd8
 ```
